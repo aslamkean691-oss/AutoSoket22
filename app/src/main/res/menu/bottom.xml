@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/btmenu1"
+    android:title="הגדרות" android:icon="@drawable/baseline_settings_suggest_24"/>
+
+    <item
+        android:id="@+id/btmenu2"
+        android:title="רשימת רכבים" android:icon="@drawable/outline_accessible_menu_24"/>
+
+    <item
+        android:id="@+id/btmenu3"
+        android:title="פרופיל" android:icon="@drawable/outline_account_box_24"/>
+
+
+
+</menu>
