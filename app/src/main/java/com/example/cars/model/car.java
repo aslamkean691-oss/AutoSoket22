@@ -2,20 +2,30 @@ package com.example.cars.model;
 
 public class car {
     private String type;              // סוג רכב
-    private String registrationDate;  // תאריך עליה לכביש
+    private String year;              // איזה שנה (שנת ייצור)
+    private String registrationDate;  // תאריך עליה לכביש (חודש/שנה)
+    private String testDate;          // טסט עד (חודש/שנה)
     private String color;             // צבע
-    private int kms;              // קילומתראז
-    private int hands;          // ידיים
+    private int kms;                  // קילומתראז
+    private int hands;                // ידיים (1-10)
     private String ownership;         // סוג בעלות
     private double priceList;         // מחירון
-    private double price;// מחיר
+    private double price;             // מחיר נדרש
 
     public String getType() {
         return type;
     }
 
+    public String getYear() {
+        return year;
+    }
+
     public String getRegistrationDate() {
         return registrationDate;
+    }
+
+    public String getTestDate() {
+        return testDate;
     }
 
     public String getColor() {
@@ -46,8 +56,16 @@ public class car {
         this.type = type;
     }
 
+    public void setYear(String year) {
+        this.year = year;
+    }
+
     public void setRegistrationDate(String registrationDate) {
         this.registrationDate = registrationDate;
+    }
+
+    public void setTestDate(String testDate) {
+        this.testDate = testDate;
     }
 
     public void setColor(String color) {
@@ -77,9 +95,11 @@ public class car {
     public car() {
     }
 
-    public car(String type, String registrationDate, String color, int kms, int hands, String ownership, double priceList, double price) {
+    public car(String type, String year, String registrationDate, String testDate, String color, int kms, int hands, String ownership, double priceList, double price) {
         this.type = type;
+        this.year = year;
         this.registrationDate = registrationDate;
+        this.testDate = testDate;
         this.color = color;
         this.kms = kms;
         this.hands = hands;
@@ -92,7 +112,9 @@ public class car {
     public String toString() {
         return "car{" +
                 "type='" + type + '\'' +
+                ", year='" + year + '\'' +
                 ", registrationDate='" + registrationDate + '\'' +
+                ", testDate='" + testDate + '\'' +
                 ", color='" + color + '\'' +
                 ", kms=" + kms +
                 ", hands=" + hands +
